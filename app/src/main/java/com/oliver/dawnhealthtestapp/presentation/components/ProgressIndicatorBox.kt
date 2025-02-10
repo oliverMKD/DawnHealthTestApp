@@ -8,7 +8,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun ProgressIndicator(){
+internal fun ProgressIndicator(){
     Box(
         modifier = Modifier.fillMaxSize()
     ) {

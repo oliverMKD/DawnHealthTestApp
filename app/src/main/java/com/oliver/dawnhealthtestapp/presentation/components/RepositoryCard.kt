@@ -29,7 +29,7 @@ import coil.compose.AsyncImage
 import com.oliver.dawnhealthtestapp.R
 
 @Composable
-fun RepositoryCard(
+internal fun RepositoryCard(
     modifier: Modifier = Modifier,
     image: String?,
     name: String,
@@ -84,7 +84,7 @@ fun RepositoryCard(
 
 @Preview(showBackground = true)
 @Composable
-fun RepositoryCardPreview(){
+private fun RepositoryCardPreview(){
     MaterialTheme {
         RepositoryCard(
             modifier = Modifier,

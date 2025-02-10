@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun ItemValueCard(
+internal fun ItemValueCard(
     key: String,
     value: String,
     modifier: Modifier = Modifier
@@ -57,7 +57,7 @@ fun ItemValueCard(
 
 @Preview(showBackground = true)
 @Composable
-fun ItemValueCardPreview() {
+private fun ItemValueCardPreview() {
     MaterialTheme {
         ItemValueCard(
             key = "Key",

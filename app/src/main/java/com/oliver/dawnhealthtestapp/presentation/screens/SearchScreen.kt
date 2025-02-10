@@ -38,7 +38,7 @@ import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 @HomeGraph(start = true)
 @Destination
 @Composable
-fun SearchScreen(
+internal fun SearchScreen(
     modifier: Modifier = Modifier,
     navController: DestinationsNavigator,
     viewModel: GitHubRepositoriesViewModel
@@ -80,7 +80,7 @@ fun SearchScreen(
 }
 
 @Composable
-fun SearchScreenContent(
+private fun SearchScreenContent(
     modifier: Modifier,
     repositoriesList: List<GithubRepository>,
     numberOfResults: Int,
@@ -124,7 +124,7 @@ fun SearchScreenContent(
 }
 
 @Composable
-fun RepositoriesList(
+private fun RepositoriesList(
     modifier: Modifier = Modifier,
     repositoriesList: List<GithubRepository>,
     onItemSelected: (GithubRepository) -> Unit,
@@ -163,7 +163,7 @@ fun RepositoriesList(
 
 @Preview(showBackground = true)
 @Composable
-fun HomeScreenContentPreview() {
+private fun HomeScreenContentPreview() {
     val sampleRepo = GithubRepository(
         id = 1,
         name = "JetBrains/Kotlin",

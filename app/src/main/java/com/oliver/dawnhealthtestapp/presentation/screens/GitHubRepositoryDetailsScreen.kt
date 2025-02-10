@@ -37,7 +37,7 @@ import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 @HomeGraph
 @Destination
 @Composable
-fun GitHubRepositoryDetailsScreen(
+internal fun GitHubRepositoryDetailsScreen(
     modifier: Modifier = Modifier,
     repositoryItem: GithubRepository,
     navController: DestinationsNavigator,
@@ -66,7 +66,7 @@ fun GitHubRepositoryDetailsScreen(
 }
 
 @Composable
-fun RepositoryDetails(
+private fun RepositoryDetails(
     modifier: Modifier,
     title: String,
     image: String,
@@ -109,7 +109,7 @@ fun RepositoryDetails(
 }
 
 @Composable
-fun RepositoryImage(
+private fun RepositoryImage(
     modifier: Modifier = Modifier,
     image: String?,
     name: String,
@@ -161,7 +161,7 @@ fun RepositoryImage(
 }
 
 @Composable
-fun RepositoryInformation(
+private fun RepositoryInformation(
     forks: Int,
     openIssues: Int,
     stars: Int,
@@ -175,7 +175,7 @@ fun RepositoryInformation(
 
 @Preview(showBackground = true)
 @Composable
-fun RepositoryDetailsPreview() {
+private fun RepositoryDetailsPreview() {
     MaterialTheme {
         RepositoryDetails(
             modifier = Modifier,
