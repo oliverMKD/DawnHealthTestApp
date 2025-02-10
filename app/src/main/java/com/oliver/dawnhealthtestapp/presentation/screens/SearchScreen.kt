@@ -1,4 +1,4 @@
-package com.oliver.dawnhealthtestapp.presentation
+package com.oliver.dawnhealthtestapp.presentation.screens
 
 import android.widget.Toast
 import androidx.compose.animation.AnimatedVisibility
@@ -28,9 +28,9 @@ import com.oliver.dawnhealthtestapp.domain.util.GitHubRepositoriesErrors
 import com.oliver.dawnhealthtestapp.presentation.components.ProgressIndicator
 import com.oliver.dawnhealthtestapp.presentation.components.RepositoryCard
 import com.oliver.dawnhealthtestapp.presentation.components.SearchBar
-import com.oliver.dawnhealthtestapp.presentation.destinations.GitHubRepositoryDetailsScreenDestination
 import com.oliver.dawnhealthtestapp.presentation.model.GitHubRepositoryEvent
 import com.oliver.dawnhealthtestapp.presentation.navigation.HomeGraph
+import com.oliver.dawnhealthtestapp.presentation.screens.destinations.GitHubRepositoryDetailsScreenDestination
 import com.oliver.dawnhealthtestapp.presentation.viewmodel.GitHubRepositoriesViewModel
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
