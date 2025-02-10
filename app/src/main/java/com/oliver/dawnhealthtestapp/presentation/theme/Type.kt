@@ -1,4 +1,4 @@
-package com.oliver.dawnhealthtestapp.ui.theme
+package com.oliver.dawnhealthtestapp.presentation.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
