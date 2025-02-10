@@ -66,14 +66,14 @@ internal fun RepositoryCard(
             ) {
                 Text(
                     text = name,
-                    color = MaterialTheme.colorScheme.onBackground,
+                    color = MaterialTheme.colorScheme.secondary,
                     fontSize = 24.sp,
                     fontWeight = FontWeight.Bold
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
                     text = description,
-                    color = MaterialTheme.colorScheme.onBackground,
+                    color = MaterialTheme.colorScheme.secondary,
                     fontSize = 14.sp,
                     lineHeight = 20.sp
                 )

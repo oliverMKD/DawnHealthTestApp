@@ -41,13 +41,13 @@ internal fun ItemValueCard(
                 text = key,
                 fontWeight = FontWeight.Bold,
                 fontSize = 16.sp,
-                color = MaterialTheme.colorScheme.onSurface,
+                color = MaterialTheme.colorScheme.secondary,
                 modifier = Modifier.weight(1f)
             )
             Text(
                 text = value,
                 fontSize = 16.sp,
-                color = MaterialTheme.colorScheme.onSurface,
+                color = MaterialTheme.colorScheme.secondary,
                 modifier = Modifier.weight(1f),
                 textAlign = TextAlign.End
             )
