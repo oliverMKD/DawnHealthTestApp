@@ -6,7 +6,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.rememberNavController
-import com.oliver.dawnhealthtestapp.presentation.NavGraphs
+import com.oliver.dawnhealthtestapp.presentation.screens.NavGraphs
 import com.oliver.dawnhealthtestapp.presentation.viewmodel.GitHubRepositoriesViewModel
 import com.ramcosta.composedestinations.DestinationsNavHost
 import com.ramcosta.composedestinations.navigation.dependency
