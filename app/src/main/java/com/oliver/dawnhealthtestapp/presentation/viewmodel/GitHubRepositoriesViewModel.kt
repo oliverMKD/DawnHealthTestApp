@@ -42,6 +42,10 @@ class GitHubRepositoriesViewModel @Inject constructor(
                     repo = gitHubRepositoryEvent.repoName
                 )
             }
+
+            GitHubRepositoryEvent.OnErrorSeen -> {
+                uiStateFlow.update { it.copy(error = null) }
+            }
         }
     }
 
