@@ -12,8 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.oliver.dawnhealthtestapp.presentation.navigation.AppNavigation
 import com.oliver.dawnhealthtestapp.presentation.theme.DawnHealthTestAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
