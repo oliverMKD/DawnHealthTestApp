@@ -28,7 +28,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun SearchBar(
+internal fun SearchBar(
     modifier: Modifier = Modifier,
     hint: String = "",
     input: String = "",
@@ -53,12 +53,12 @@ fun SearchBar(
                 shape = RoundedCornerShape(12.dp)
             )
             .padding(horizontal = 16.dp, vertical = 12.dp)
-    ){
+    ) {
 
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.fillMaxWidth()
-        ){
+        ) {
             Icon(
                 imageVector = Icons.Filled.Search,
                 contentDescription = "Search Icon",
@@ -100,7 +100,7 @@ fun SearchBar(
 
 @Preview
 @Composable
-fun SearchBarPreview() {
+private fun SearchBarPreview() {
     SearchBar(
         hint = "Some hint",
         onSearch = {},
