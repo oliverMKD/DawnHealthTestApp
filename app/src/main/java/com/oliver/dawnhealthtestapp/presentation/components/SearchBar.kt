@@ -33,8 +33,8 @@ internal fun SearchBar(
     hint: String = "",
     input: String = "",
     backgroundColor: Color = MaterialTheme.colorScheme.surface,
-    textColor: Color = MaterialTheme.colorScheme.onBackground,
-    hintColor: Color = MaterialTheme.colorScheme.onTertiary,
+    textColor: Color = MaterialTheme.colorScheme.secondary,
+    hintColor: Color = MaterialTheme.colorScheme.tertiary,
     textStyle: TextStyle = TextStyle(
         fontSize = MaterialTheme.typography.bodyLarge.fontSize,
         lineHeight = MaterialTheme.typography.bodyLarge.lineHeight

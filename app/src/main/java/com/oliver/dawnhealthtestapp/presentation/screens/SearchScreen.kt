@@ -108,7 +108,7 @@ private fun SearchScreenContent(
                 AnimatedVisibility(repositoriesList.isNotEmpty()) {
                     Text(
                         text = "$numberOfResults results",
-                        color = MaterialTheme.colorScheme.onBackground,
+                        color = MaterialTheme.colorScheme.secondary,
                         fontSize = 14.sp,
                         lineHeight = 20.sp
                     )

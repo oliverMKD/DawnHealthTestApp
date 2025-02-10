@@ -21,6 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -147,12 +148,12 @@ private fun RepositoryImage(
             }
             Text(
                 text = name,
-                color = MaterialTheme.colorScheme.onBackground,
+                color = MaterialTheme.colorScheme.secondary,
                 fontSize = 24.sp,
             )
             Text(
                 text = language,
-                color = MaterialTheme.colorScheme.onBackground,
+                color = MaterialTheme.colorScheme.secondary,
                 fontSize = 14.sp,
                 lineHeight = 20.sp
             )
@@ -167,10 +168,10 @@ private fun RepositoryInformation(
     stars: Int,
     releaseVersion: String
 ) {
-    ItemValueCard("Forks", forks.toString())
-    ItemValueCard("Issues", openIssues.toString())
-    ItemValueCard("Stars", stars.toString())
-    ItemValueCard("Last Release date", releaseVersion)
+    ItemValueCard(key = stringResource(R.string.forks), value = forks.toString())
+    ItemValueCard(key = stringResource(R.string.issues), value = openIssues.toString())
+    ItemValueCard(key = stringResource(R.string.starred_by), value = stars.toString())
+    ItemValueCard(key = stringResource(R.string.last_release_version), value = releaseVersion)
 }
 
 @Preview(showBackground = true)
