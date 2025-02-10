@@ -1,7 +1,10 @@
 package com.oliver.dawnhealthtestapp.di
 
+import com.google.gson.Gson
 import com.oliver.dawnhealthtestapp.data.remote.AppConfig.BASE_URL
 import com.oliver.dawnhealthtestapp.data.remote.GithubRepositoriesApi
+import com.oliver.dawnhealthtestapp.data.repository.GitHubRepoRepositoryImpl
+import com.oliver.dawnhealthtestapp.domain.repository.GitHubRepoRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -46,5 +49,21 @@ object AppModule {
     @Singleton
     fun provideGithubApi(retrofit: Retrofit): GithubRepositoriesApi {
         return retrofit.create(GithubRepositoriesApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideGson(): Gson = Gson()
+
+    @Provides
+    @Singleton
+    fun provideGitHubRepoRepository(
+        githubRepositoriesApi: GithubRepositoriesApi,
+        gson: Gson
+    ): GitHubRepoRepository {
+        return GitHubRepoRepositoryImpl(
+            api = githubRepositoriesApi,
+            gson = gson
+        )
     }
 }
