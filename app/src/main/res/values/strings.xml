@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">DawnHealthTestApp</string>
+    <string name="search_for_repository">Search for repository</string>
+    <string name="search_for_repository_body">Search for a repository and save it as favourite</string>
+    <string name="little_empty">A little empty</string>
+    <string name="error_service_unavailable">Oops, an error happened. Please try again later.</string>
+    <string name="client_error">Oops, an error happened. Please contact for support.</string>
+    <string name="server_error">An error happened. Please try again later.</string>
+    <string name="unknown_error">Oops, an unknown error happened.</string>
+    <string name="forks">Forks</string>
+    <string name="issues">Issues</string>
+    <string name="starred_by">Starred by</string>
+    <string name="last_release_version">Last release version</string>
+
 </resources>
